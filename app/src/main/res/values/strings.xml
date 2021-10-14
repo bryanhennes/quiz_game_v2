@@ -17,4 +17,6 @@
     <string name="username_dialog_hint">Username</string>
     <string name="password_dialog_hint">Password</string>
     <string name="confirm">Log In</string>
+    <string name="welcomeText">Welcome </string>
+    <string name="howToStartGame">Click "Start Game" Button to Begin Quiz!</string>
 </resources>
