@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz_game_v2">
         <activity
+            android:name=".Question4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Question3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Question2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Question1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizInstructionsActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity

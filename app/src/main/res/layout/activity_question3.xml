@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Question3Activity">
+
+    <TextView
+        android:id="@+id/question3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question3Text"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_rome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rome"
+        android:onClick="onCheckboxClicked" />
+
+    <CheckBox
+        android:id="@+id/checkbox_florence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/florence"
+        android:onClick="onCheckboxClicked" />
+
+    <CheckBox
+        android:id="@+id/checkbox_berlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/berlin"
+        android:onClick="onCheckboxClicked" />
+
+    <CheckBox
+        android:id="@+id/checkbox_milan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/milan"
+        android:onClick="onCheckboxClicked" />
+
+    <Button
+        android:id="@+id/ConfirmQuestion3AnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ConfirmAnswerButtonText"
+        android:layout_gravity="center"
+        android:onClick="checkAnswer"/>
+    <Button
+        android:id="@+id/moveToNextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moveToNextQuestionText"
+        android:layout_gravity="center"
+        android:onClick="nextQuestion"/>
+
+</LinearLayout>

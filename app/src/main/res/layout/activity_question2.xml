@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Question2Activity">
+
+    <TextView
+        android:id="@+id/Question2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question2text"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/question2_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2_answer1Text"
+            android:onClick="saveAnswer"
+            />
+        <RadioButton
+            android:id="@+id/question2_correctAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2CorrectAnswerText"
+            android:onClick="saveAnswer"
+
+            />
+        <RadioButton
+            android:id="@+id/question2_answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2_answer3"
+            android:onClick="saveAnswer"
+
+            />
+        <RadioButton
+            android:id="@+id/question2_answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2_answer4"
+            android:onClick="saveAnswer"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ConfirmQuestion2AnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ConfirmAnswerButtonText"
+        android:layout_gravity="center"
+        android:onClick="checkAnswer"/>
+    <Button
+        android:id="@+id/moveToNextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moveToNextQuestionText"
+        android:layout_gravity="center"
+        android:onClick="nextQuestion"/>
+
+
+
+
+</LinearLayout>

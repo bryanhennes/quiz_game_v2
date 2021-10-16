@@ -100,7 +100,8 @@ public class StartGameActivity extends AppCompatActivity {
 
     //method to set textview to display greeting for signed in user and instruct how to start the game
     public void greetUser(){
-        welcomeTextView.setText(getResources().getString(R.string.welcomeText) + " " + savedUsername + "! " + getResources().getString(R.string.howToStartGame));
+        String preferencesUsername = sharedPreferences.getString(USERNAME, "");
+        welcomeTextView.setText(getResources().getString(R.string.welcomeText) + " " + preferencesUsername + "! " + getResources().getString(R.string.howToStartGame));
         welcomeTextView.setVisibility(View.VISIBLE);
     }
 
@@ -110,7 +111,9 @@ public class StartGameActivity extends AppCompatActivity {
         this.startActivity(intent);
     }
 
-    //when clicking start game button, quiz game will begin with first question
+    //when clicking start game button, quiz game will begin with instructions activity
     public void startGame(View view) {
+        Intent intent = new Intent(this, QuizInstructionsActivity.class);
+        this.startActivity(intent);
     }
 }
