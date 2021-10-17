@@ -10,8 +10,28 @@
     <TextView
         android:id="@+id/displayFinalScoreTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
         android:textSize="30sp"
-        android:layout_gravity="center"/>
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/displayHighScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:text="@string/playAgainButtonText"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
 
 </LinearLayout>

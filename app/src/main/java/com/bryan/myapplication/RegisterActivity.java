@@ -111,7 +111,7 @@ public class RegisterActivity extends AppCompatActivity {
         this.startActivity(intent);
     }
 
-    
+
     //check if field is empty or not
     public boolean fieldEmpty(EditText field) {
         String fieldText = field.getText().toString();

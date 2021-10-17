@@ -1,8 +1,12 @@
 package com.bryan.myapplication;
 
+import static com.bryan.myapplication.RegisterActivity.MYPREF;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +18,11 @@ public class Question5Activity extends AppCompatActivity {
 
     Button confirmAnswerButton;
     Button nextQuestionButton;
+    SharedPreferences sharedPreferences;
+    int sharedPreferencesScore;
+    int highScore;
+    public static final String HIGHSCORE = "HIGHSCORE_KEY";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +31,8 @@ public class Question5Activity extends AppCompatActivity {
 
         Intent recInt = getIntent();
         score = recInt.getIntExtra("Score4", score);
+        sharedPreferences = getSharedPreferences(MYPREF, Context.MODE_PRIVATE);
+
 
         confirmAnswerButton = (Button) findViewById(R.id.ConfirmQuestion5AnswerButton);
         nextQuestionButton = (Button) findViewById(R.id.moveToNextQuestionButton);
@@ -34,7 +45,6 @@ public class Question5Activity extends AppCompatActivity {
 
     public void checkAnswer(View view) {
         if (selectedAnswer == R.id.question5_correctAnswer){
-            Toast.makeText(Question5Activity.this, "Correct", Toast.LENGTH_LONG).show();
             score+= 20;
             changeButtonVisibilities();
         }
@@ -44,7 +54,6 @@ public class Question5Activity extends AppCompatActivity {
 
         }
         else {
-            Toast.makeText(Question5Activity.this, "Incorrect", Toast.LENGTH_LONG).show();
             changeButtonVisibilities();
         }
     }
@@ -52,6 +61,23 @@ public class Question5Activity extends AppCompatActivity {
     public void seeResults(View view) {
         Intent intent = new Intent(this, ResultsActivity.class);
         intent.putExtra("Score5", score);
+        sharedPreferences = getSharedPreferences(MYPREF, Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        if(!sharedPreferences.contains(HIGHSCORE)){
+            editor.putInt(HIGHSCORE, score);
+            editor.commit();
+            editor.apply();
+        }
+        else{
+            sharedPreferencesScore = sharedPreferences.getInt(HIGHSCORE, score);
+            if(score > sharedPreferencesScore){
+                editor.putInt(HIGHSCORE, score);
+                editor.commit();
+                editor.apply();
+            }
+        }
+
         this.startActivity(intent);
     }
 

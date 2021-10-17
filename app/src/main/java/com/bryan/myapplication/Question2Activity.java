@@ -33,8 +33,6 @@ public class Question2Activity extends AppCompatActivity {
     //check if selected answer is correct after user clicks confirm answer button
     public void checkAnswer(View view) {
         if (selectedAnswer == R.id.question2_correctAnswer){
-            Toast.makeText(Question2Activity.this, "Correct", Toast.LENGTH_LONG).show();
-
             score+= 20;
             changeButtonVisibilities();
         }
@@ -44,7 +42,6 @@ public class Question2Activity extends AppCompatActivity {
 
         }
         else {
-            Toast.makeText(Question2Activity.this, "Incorrect", Toast.LENGTH_LONG).show();
             changeButtonVisibilities();
         }
     }

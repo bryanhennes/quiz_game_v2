@@ -32,7 +32,6 @@ public class Question4Activity extends AppCompatActivity {
 
     public void checkAnswer(View view) {
         if (selectedAnswer == R.id.question4_correctAnswer){
-            Toast.makeText(Question4Activity.this, "Correct", Toast.LENGTH_LONG).show();
             score+= 20;
             changeButtonVisibilities();
         }
@@ -42,7 +41,6 @@ public class Question4Activity extends AppCompatActivity {
 
         }
         else {
-            Toast.makeText(Question4Activity.this, "Incorrect", Toast.LENGTH_LONG).show();
             changeButtonVisibilities();
         }
     }

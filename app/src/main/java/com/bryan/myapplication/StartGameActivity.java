@@ -44,6 +44,8 @@ public class StartGameActivity extends AppCompatActivity {
         registerButton = (Button) findViewById(R.id.register_button);
         logInButton = (Button) findViewById(R.id.prompt_login_button);
 
+
+
         usernameEdit = (EditText) findViewById(R.id.username_field);
         passwordEdit = (EditText) findViewById(R.id.password_field);
         Intent recString = getIntent();
@@ -104,7 +106,9 @@ public class StartGameActivity extends AppCompatActivity {
     public void greetUser(){
         String preferencesUsername = sharedPreferences.getString(USERNAME, "");
         welcomeTextView.setText(getResources().getString(R.string.welcomeText) + " " + preferencesUsername + "! " + getResources().getString(R.string.howToStartGame));
+
         welcomeTextView.setVisibility(View.VISIBLE);
+
     }
 
     //when register button is clicked, move to register activity

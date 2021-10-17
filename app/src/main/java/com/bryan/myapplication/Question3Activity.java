@@ -79,7 +79,6 @@ public class Question3Activity extends AppCompatActivity {
 
 
         if(romeChecked && florenceChecked && milanChecked){
-            Toast.makeText(Question3Activity.this, "Correct", Toast.LENGTH_LONG).show();
             score+=20;
             changeButtonVisibilities();
         }
@@ -87,7 +86,6 @@ public class Question3Activity extends AppCompatActivity {
             Toast.makeText(Question3Activity.this, "Please select at least one answer", Toast.LENGTH_LONG).show();
         }
         else{
-            Toast.makeText(Question3Activity.this, "Incorrect", Toast.LENGTH_LONG).show();
             changeButtonVisibilities();
         }
 
