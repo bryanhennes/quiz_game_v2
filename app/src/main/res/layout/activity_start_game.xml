@@ -26,6 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:onClick="enterCredentials"
+        android:visibility="visible"
         />
 
     <Button
@@ -47,6 +48,7 @@
         android:layout_below="@+id/prompt_login_button"
         android:layout_centerHorizontal="true"
         android:visibility="gone"
+        android:layout_centerInParent="true"
         android:onClick="startGame"
         />
 

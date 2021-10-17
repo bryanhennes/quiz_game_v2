@@ -7,10 +7,14 @@
         <entry key="app/src/main/res/layout/activity_question1.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_question2.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_question3.xml" value="0.1734375" />
+        <entry key="app/src/main/res/layout/activity_question4.xml" value="0.1734375" />
+        <entry key="app/src/main/res/layout/activity_question5.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_quiz_instructions.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_results.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_start_game.xml" value="0.1503623188405797" />
         <entry key="app/src/main/res/layout/cusrtom_dialog.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.1875" />
       </map>
     </option>
   </component>

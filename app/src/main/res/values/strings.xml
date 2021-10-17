@@ -44,4 +44,15 @@
     <string name="florence">Florence</string>
     <string name="berlin">Berlin</string>
     <string name="milan">Milan</string>
+    <string name="question4text">How many New York hockey teams exist in the NHL?</string>
+    <string name="question4_answer1Text">2</string>
+    <string name="question4answer2Text">1</string>
+    <string name="question4correctAnswerText">3</string>
+    <string name="question4_answer4">0</string>
+    <string name="question5text">What planet is closest to the sun?</string>
+    <string name="question5_answer1Text">Earth</string>
+    <string name="question5answer2Text">Venus</string>
+    <string name="question5correctAnswerText">Mercury</string>
+    <string name="question5_answer4">Mars</string>
+    <string name="moveToResultsText">See Results</string>
 </resources>

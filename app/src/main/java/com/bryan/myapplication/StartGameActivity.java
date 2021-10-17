@@ -21,6 +21,7 @@ import android.widget.Toast;
 public class StartGameActivity extends AppCompatActivity {
     Button startGameButton;
     Button registerButton;
+    Button logInButton;
     Dialog dialog;
     EditText usernameEdit;
     EditText passwordEdit;
@@ -41,6 +42,7 @@ public class StartGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start_game);
         startGameButton = (Button) findViewById(R.id.start_game_button) ;
         registerButton = (Button) findViewById(R.id.register_button);
+        logInButton = (Button) findViewById(R.id.prompt_login_button);
 
         usernameEdit = (EditText) findViewById(R.id.username_field);
         passwordEdit = (EditText) findViewById(R.id.password_field);
@@ -93,7 +95,7 @@ public class StartGameActivity extends AppCompatActivity {
         dialog.dismiss();
         startGameButton.setVisibility(View.VISIBLE); //once logged in, start game button becomes visible
         registerButton.setVisibility(View.GONE); //and register button becomes gone
-
+        logInButton.setVisibility(View.GONE);
         greetUser();
 
     }

@@ -5,57 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Question1Activity">
+    tools:context=".Question5Activity">
 
     <TextView
-        android:id="@+id/Question1TextView"
+        android:id="@+id/Question5TextView"
         android:layout_width="match_parent"
         android:layout_height="0sp"
         android:layout_weight="1"
-        android:text="@string/question1text"
+        android:text="@string/question5text"
         android:gravity="center_horizontal"
         android:textSize="30sp"/>
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="0sp"
-        android:layout_weight="3"
         android:orientation="vertical"
+        android:layout_weight="3"
         >
         <RadioButton
-            android:id="@+id/correct_answer1"
+            android:id="@+id/question5_answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/correct_answer_question1"
+            android:text="@string/question5_answer1Text"
             android:onClick="saveAnswer"
             />
         <RadioButton
-            android:id="@+id/question1_answer2"
+            android:id="@+id/question5_answer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question1_answer2"
-            android:onClick="saveAnswer"
-
-            />
-        <RadioButton
-            android:id="@+id/question1_answer3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/question1_answer3"
+            android:text="@string/question5answer2Text"
             android:onClick="saveAnswer"
 
             />
         <RadioButton
-            android:id="@+id/question1_answer4"
+            android:id="@+id/question5_correctAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question1_answer4"
+            android:text="@string/question5correctAnswerText"
+            android:onClick="saveAnswer"
+
+            />
+        <RadioButton
+            android:id="@+id/question5_answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question5_answer4"
             android:onClick="saveAnswer"
             />
 
     </RadioGroup>
 
     <Button
-        android:id="@+id/ConfirmQuestion1AnswerButton"
+        android:id="@+id/ConfirmQuestion5AnswerButton"
         android:layout_width="wrap_content"
         android:layout_height="0sp"
         android:layout_weight="1"
@@ -68,9 +68,9 @@
         android:layout_width="wrap_content"
         android:layout_height="0sp"
         android:layout_weight="1"
-        android:text="@string/moveToNextQuestionText"
+        android:text="@string/moveToResultsText"
         android:layout_gravity="center"
-        android:onClick="nextQuestion"
+        android:onClick="seeResults"
         android:visibility="gone"/>
 
 

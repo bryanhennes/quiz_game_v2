@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ public class Question3Activity extends AppCompatActivity {
     boolean florenceChecked;
     boolean milanChecked;
     boolean berlinChecked;
+    Button confirmAnswerButton;
+    Button nextQuestionButton;
 
 
     @Override
@@ -33,6 +36,12 @@ public class Question3Activity extends AppCompatActivity {
         florence = (CheckBox) findViewById(R.id.checkbox_florence);
         berlin = (CheckBox) findViewById(R.id.checkbox_berlin);
         milan = (CheckBox) findViewById(R.id.checkbox_milan);
+
+        Intent recInt = getIntent();
+        score = recInt.getIntExtra("Score2", score);
+
+        confirmAnswerButton = (Button) findViewById(R.id.ConfirmQuestion3AnswerButton);
+        nextQuestionButton = (Button) findViewById(R.id.moveToNextQuestionButton);
     }
 
     public void onCheckboxClicked(View view) {
@@ -72,12 +81,14 @@ public class Question3Activity extends AppCompatActivity {
         if(romeChecked && florenceChecked && milanChecked){
             Toast.makeText(Question3Activity.this, "Correct", Toast.LENGTH_LONG).show();
             score+=20;
+            changeButtonVisibilities();
         }
         else if(!romeChecked && !florenceChecked && !milanChecked && !berlinChecked){
             Toast.makeText(Question3Activity.this, "Please select at least one answer", Toast.LENGTH_LONG).show();
         }
         else{
             Toast.makeText(Question3Activity.this, "Incorrect", Toast.LENGTH_LONG).show();
+            changeButtonVisibilities();
         }
 
     clearCheckBoxes(view);
@@ -97,6 +108,13 @@ public class Question3Activity extends AppCompatActivity {
 
     public void nextQuestion(View view) {
         Intent intent = new Intent(this, Question4Activity.class);
+        intent.putExtra("Score3", score);
         this.startActivity(intent);
+    }
+
+    //when user clicks to confirm answer, remove confirm button and replace with next question button
+    public void changeButtonVisibilities(){
+        confirmAnswerButton.setVisibility(View.GONE);
+        nextQuestionButton.setVisibility(View.VISIBLE);
     }
 }

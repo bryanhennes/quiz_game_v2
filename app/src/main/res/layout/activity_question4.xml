@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Question4Activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/Question4TextView"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:text="@string/question4text"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/question4_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question4_answer1Text"
+            android:onClick="saveAnswer"
+            />
+        <RadioButton
+            android:id="@+id/question4_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question4answer2Text"
+            android:onClick="saveAnswer"
+
+            />
+        <RadioButton
+            android:id="@+id/question4_correctAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question4correctAnswerText"
+            android:onClick="saveAnswer"
+
+            />
+        <RadioButton
+            android:id="@+id/question4_answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question4_answer4"
+            android:onClick="saveAnswer"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ConfirmQuestion4AnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:text="@string/ConfirmAnswerButtonText"
+        android:layout_gravity="center"
+        android:onClick="checkAnswer"
+        android:visibility="visible"/>
+    <Button
+        android:id="@+id/moveToNextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:text="@string/moveToNextQuestionText"
+        android:layout_gravity="center"
+        android:onClick="nextQuestion"
+        android:visibility="gone"/>
+
+
+
+
+</LinearLayout>

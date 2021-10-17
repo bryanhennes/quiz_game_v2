@@ -10,55 +10,62 @@
     <TextView
         android:id="@+id/Quiz_Instructions_Title_TextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/QuizInstructionsTitleText"
         android:textSize="60sp"
-        android:layout_gravity="center"/>
+        android:gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/Quiz_Instructions_First_TextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/QuizInstructionsFirstText"
         android:textSize="25sp"
-        android:layout_gravity="center"/>
+        android:gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/Quiz_Instructions_Second_TextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/QuizInstructionsSecondText"
         android:textSize="25sp"
-        android:layout_gravity="center"/>
+        android:gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/Quiz_Instructions_Third_TextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/QuizInstructionsThirdText"
         android:textSize="25sp"
-        android:layout_gravity="center"/>
+        android:gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/Quiz_Instructions_Fourth_TextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/QuizInstructionsFourthText"
         android:textSize="25sp"
-        android:layout_gravity="center"/>
+        android:gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/Quiz_Instructions_Fifth_TextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/QuizInstructionsFifthText"
         android:textSize="25sp"
-        android:layout_gravity="center"/>
+        android:gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/StartFirstQuestionButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:text="@string/startquestion1ButtonText"
         android:layout_gravity="center"
         android:onClick="beginQuiz"/>
