@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import com.bryan.myapplication.User;
 
@@ -46,4 +47,8 @@ public class ResultsActivity extends AppCompatActivity {
     }
 
 
+    public void restartGame(View view) {
+        Intent intent = new Intent(this, Question1Activity.class);
+        this.startActivity(intent);
+    }
 }

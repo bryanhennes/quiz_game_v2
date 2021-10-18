@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background_color"
     tools:context=".Question2Activity">
 
     <TextView
@@ -13,6 +14,8 @@
         android:layout_height="0sp"
         android:layout_weight="1"
         android:text="@string/question2text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         android:textSize="30sp"/>
     <RadioGroup
@@ -25,6 +28,7 @@
             android:id="@+id/question2_answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="@string/question2_answer1Text"
             android:onClick="saveAnswer"
             />
@@ -32,6 +36,7 @@
             android:id="@+id/question2_correctAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="@string/question2CorrectAnswerText"
             android:onClick="saveAnswer"
 
@@ -40,6 +45,7 @@
             android:id="@+id/question2_answer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="@string/question2_answer3"
             android:onClick="saveAnswer"
 
@@ -48,6 +54,7 @@
             android:id="@+id/question2_answer4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="@string/question2_answer4"
             android:onClick="saveAnswer"
             />
@@ -61,6 +68,7 @@
         android:layout_weight="1"
         android:text="@string/ConfirmAnswerButtonText"
         android:layout_gravity="center"
+        android:backgroundTint="@color/button_color"
         android:onClick="checkAnswer"
         android:visibility="visible"/>
     <Button
@@ -70,6 +78,7 @@
         android:layout_weight="1"
         android:text="@string/moveToNextQuestionText"
         android:layout_gravity="center"
+        android:backgroundTint="@color/button_color"
         android:onClick="nextQuestion"
         android:visibility="gone"/>
 

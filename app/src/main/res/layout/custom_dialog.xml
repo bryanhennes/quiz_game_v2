@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:text="@string/dialog_title"
         android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:textSize="24sp"
         android:layout_marginBottom="20sp"/>
     <EditText
@@ -34,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/button_color"
             android:onClick="checkCredentials"
             android:text="@string/confirm"/>
     </RelativeLayout>

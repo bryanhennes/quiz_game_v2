@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background_color"
     tools:context=".ResultsActivity">
 
     <TextView
@@ -12,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="0sp"
         android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:gravity="center"/>
@@ -21,6 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="0sp"
         android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:textSize="30sp"
         android:gravity="center"/>
@@ -30,7 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="80sp"
         android:text="@string/playAgainButtonText"
+        android:backgroundTint="@color/button_color"
         android:layout_gravity="center_horizontal"
+        android:onClick="restartGame"
         android:gravity="center"/>
 
 

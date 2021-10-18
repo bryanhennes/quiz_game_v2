@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background_color"
     tools:context=".StartGameActivity">
 
     <TextView
@@ -12,10 +13,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/controller_icon_imageView"
         android:layout_centerHorizontal="true"
         android:textSize="40sp"
         android:visibility="gone"
         />
+
+    <ImageView
+        android:id="@+id/controller_icon_imageView"
+        android:layout_above="@+id/prompt_login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon"/>
 
 
     <Button
@@ -24,6 +37,7 @@
         android:layout_height="80sp"
         android:layout_centerInParent="true"
         android:onClick="enterCredentials"
+        android:backgroundTint="@color/button_color"
         android:text="@string/prompt_login_button_text"
         android:visibility="visible" />
 
@@ -33,6 +47,7 @@
         android:layout_height="80sp"
         android:layout_centerInParent="true"
         android:layout_below="@+id/prompt_login_button"
+        android:backgroundTint="@color/button_color"
         android:text="@string/register_button_text"
         android:onClick="registerUser"
         android:visibility="visible"
@@ -44,6 +59,7 @@
         android:layout_height="60sp"
         android:text="@string/start_game_button_text"
         android:layout_below="@+id/prompt_login_button"
+        android:backgroundTint="@color/button_color"
         android:layout_centerHorizontal="true"
         android:visibility="gone"
         android:layout_centerInParent="true"
